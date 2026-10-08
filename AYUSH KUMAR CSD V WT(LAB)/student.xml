@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "student.dtd">
+<?xml-stylesheet type="text/xsl" href="student.xsl"?>
+<students>
+    <student>
+        <name>Ayush Kumar</name>
+        <roll>101</roll>
+        <branch>CSE</branch>
+        <marks>85</marks>
+    </student>
+    <student>
+        <name>Sahitya Parth</name>
+        <roll>102</roll>
+        <branch>CSDS</branch>
+        <marks>90</marks>
+    </student>
+</students>

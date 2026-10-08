@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let age = document.getElementById("age").value;
+
+            if (name == "") {
+                alert("Please enter your name");
+                return false;
+            }
+            if (email == "") {
+                alert("Please enter your email");
+                return false;
+            }
+            if (age == "" || age < 18) {
+                alert("Age must be 18 or above");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>Input Validation Form</h2>
+    <form onsubmit="return validateForm()">
+        Name:
+        <input type="text" id="name">
+        <br><br>
+        Email:
+        <input type="text" id="email">
+        <br><br>
+        Age:
+        <input type="number" id="age">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

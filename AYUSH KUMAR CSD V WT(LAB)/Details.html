@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Entry Form</title>
+</head>
+<body bgcolor="#FDF6ED">
+
+    <center>
+        <h1>Student Details Entry Form</h1>
+    </center>
+    <form action="/submit" method="post">
+
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name" required>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+        <br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">--Select Course--</option>
+            <option value="BSc">Bachelor of Science (BSc)</option>
+            <option value="BTech">Bachelor of Technology (BTech)</option>
+            <option value="MSc">Master of Science (MSc)</option>
+            <option value="MTech">Master of Technology (MTech)</option>
+        </select>
+        <br><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" id="sports" name="hobbies" value="Sports">
+        <label for="sports">Sports</label><br>
+
+        <input type="checkbox" id="music" name="hobbies" value="Music">
+        <label for="music">Music</label><br>
+
+        <input type="checkbox" id="reading" name="hobbies" value="Reading">
+        <label for="reading">Reading</label>
+        <br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your address" required></textarea>
+        <br><br>
+
+        <label for="profile_picture">Upload Profile Picture:</label>
+        <input type="file" id="profile_picture" name="profile_picture">
+        <br><br>
+
+        <center>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </center>
+      </form>
+  </body>
+</html>
